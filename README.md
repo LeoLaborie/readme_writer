@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# readme_writer
 
-## Getting Started
+allows you to write READMEs for your GitHub projects simply and quickly
 
-First, run the development server:
+## Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+To set up the `readme_writer` project locally, follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://https://github.com/LeoLaborie/readme_writer.git
+    cd readme_writer
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2.  **Install dependencies:**
+    Use npm to install the required packages.
+    ```bash
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+After installation, you can run the development server or build the project for production.
 
-To learn more about Next.js, take a look at the following resources:
+1.  **Run the development server:**
+    To start the application in development mode with hot-reloading:
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  **Build for production:**
+    To create an optimized production build:
+    ```bash
+    npm run build
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  **Start the production server:**
+    After building, start the production server:
+    ```bash
+    npm run start
+    ```
 
-## Deploy on Vercel
+4.  **Lint the codebase:**
+    To check for code quality and style issues:
+    ```bash
+    npm run lint
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Based on the detected dependencies and project structure, this project includes the following capabilities:
+
+*   **AI Integration:** Utilizes `@google/generative-ai` for generative AI functionalities.
+*   **Markdown Rendering:** Supports rendering of Markdown content, including GitHub Flavored Markdown (GFM), via `react-markdown` and `remark-gfm`.
+*   **Modern Web Application:** Developed as a Next.js and React application for a contemporary web experience.
+*   **Styling:** Implements Tailwind CSS for utility-first styling.
+
+## Tech Stack
+
+The `readme_writer` project is built using the following technologies:
+
+*   **Languages:** TypeScript
+*   **Frameworks:** Next.js, React, Tailwind CSS
+*   **Tools:** ESLint
+*   **Package Manager:** npm
+
+## Configuration
+
+The project utilizes several configuration files for various aspects of its operation:
+
+*   **`next.config.ts`**: Configures Next.js specific options.
+*   **`tsconfig.json`**: Defines TypeScript compiler options.
+*   **`postcss.config.mjs`**: Configures PostCSS for CSS processing, typically used by Tailwind CSS.
+*   **`eslint.config.mjs`**: Specifies ESLint rules for code linting.
+*   **`.gitignore`**: Lists files and directories to be ignored by Git.
+
+
+---
+
+[![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue.svg)](https://www.typescriptlang.org/)
+[![npm](https://img.shields.io/badge/Package%20Manager-npm-red.svg)](https://www.npmjs.com/)
