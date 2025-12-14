@@ -20,7 +20,7 @@ export interface SectionSelection {
 export type Tone = 'professional' | 'friendly' | 'technical' | 'marketing';
 
 const SECTION_INSTRUCTIONS: Record<keyof SectionSelection, string> = {
-    title_description: 'Title & Description: Project name as heading, concise description of what the project does.',
+    title_description: 'Title & Description: Project name as heading, complete description of what the project does.',
     installation: 'Installation: Step-by-step installation instructions based on detected package manager and dependencies.',
     usage: 'Usage: Basic usage examples and getting started guide.',
     features: 'Features: List key features based on actual functionality detected in the codebase.',
@@ -95,7 +95,6 @@ INSTRUCTIONS:
 - ${selectedSections}
 
 CRITICAL RULES:
-- ONLY use information provided above - do NOT infer or guess
 - Do NOT invent features, APIs, or technologies not explicitly listed
 - Do NOT add placeholder content like "[describe...]" or "[add...]"
 - If information is missing for a section, provide minimal accurate content or skip details
