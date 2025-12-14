@@ -192,6 +192,17 @@ export default function Home() {
           <p>
             Built with Next.js, Tailwind CSS, and Google Gemini AI
           </p>
+          <p className="mt-2">
+            Created by{' '}
+            <a
+              href="https://leolaborie.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 transition-colors"
+            >
+              Leo Laborie
+            </a>
+          </p>
         </div>
       </footer>
     </div>
